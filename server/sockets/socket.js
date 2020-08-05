@@ -4,8 +4,8 @@ io.on("connection", (client) => {
 	console.log("Usuario conectado".yellow);
 
 	client.emit("enviarMensaje", {
-		usuario: "admin",
-		mensaje: "Bienvenido a esta app",
+		usuario: "No hay usuario que te ha escrito",
+		mensaje: "No hay mensajes por el momento",
 	});
 
 	client.on("disconnect", () => {
